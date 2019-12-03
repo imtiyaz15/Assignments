@@ -95,6 +95,7 @@ class ParseRSS: NSObject, XMLParserDelegate
         {
             inItem = false
             items.append(item)
+            print("Printing Items title: \(item.title)")
             return
         }
 

@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func onSendPostTapped(_ sender: UIButton) {
+    
+    func senData()
+    {
         print(">>>>>Send<<<<<")
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts")  else {return}
         var request = URLRequest(url: url)
@@ -38,9 +40,9 @@ class ViewController: UIViewController {
         }
         task.resume()
     }
-    
-    @IBAction func onGetUserTapped(_ sender: UIButton) {
-        print(">>>>>Get<<<<<<<<")
+    func getDat()
+    {
+       print(">>>>>Get<<<<<<<<")
     }
 }
 
