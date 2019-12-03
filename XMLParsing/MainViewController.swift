@@ -10,8 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController
 {
-    @IBOutlet weak var navBar: UINavigationBar!
-
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -28,9 +27,11 @@ class MainViewController: UIViewController
     {
         // Load data
         loadData()
+        let VT  = ViewControllerForTablle()
+        VT.getDatafromJson()
     }
 
-    private func loadData() -> Void
+     func loadData() -> Void
     {
         // Make asynchronous web request and handle replies
         let url = "https://www.lavocecastiglione.it/x5short.rss"
