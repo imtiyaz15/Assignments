@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Task 7 MVC
+//  SQLiteApp
 //
-//  Created by Brahmastra on 04/12/19.
+//  Created by Brahmastra on 05/12/19.
 //  Copyright © 2019 Brahmastra. All rights reserved.
 //
 
@@ -46,9 +46,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-
-        // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
