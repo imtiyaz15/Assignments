@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SQLiteApp
+//  SqliteApp
 //
 //  Created by Brahmastra on 05/12/19.
 //  Copyright © 2019 Brahmastra. All rights reserved.

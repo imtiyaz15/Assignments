@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D58742623984AC50005C282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58742523984AC50005C282 /* AppDelegate.swift */; };
-		6D58742823984AC50005C282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58742723984AC50005C282 /* SceneDelegate.swift */; };
-		6D58742A23984AC50005C282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D58742923984AC50005C282 /* ViewController.swift */; };
-		6D58742D23984AC50005C282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D58742B23984AC50005C282 /* Main.storyboard */; };
-		6D58742F23984AC70005C282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D58742E23984AC70005C282 /* Assets.xcassets */; };
-		6D58743223984AC70005C282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D58743023984AC70005C282 /* LaunchScreen.storyboard */; };
+		6D2670532399571200D08F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2670522399571200D08F77 /* AppDelegate.swift */; };
+		6D2670552399571200D08F77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2670542399571200D08F77 /* SceneDelegate.swift */; };
+		6D2670572399571200D08F77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2670562399571200D08F77 /* MainViewController.swift */; };
+		6D26705A2399571200D08F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2670582399571200D08F77 /* Main.storyboard */; };
+		6D26705C2399571300D08F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D26705B2399571300D08F77 /* Assets.xcassets */; };
+		6D26705F2399571300D08F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D26705D2399571300D08F77 /* LaunchScreen.storyboard */; };
+		6D26706923995EB500D08F77 /* Contatcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26706823995EB500D08F77 /* Contatcs.swift */; };
+		6D26706B2399668400D08F77 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26706A2399668400D08F77 /* Database.swift */; };
+		6D26706E239970B400D08F77 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26706D239970B400D08F77 /* AddContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D58742223984AC50005C282 /* SQLiteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D58742523984AC50005C282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D58742723984AC50005C282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6D58742923984AC50005C282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6D58742C23984AC50005C282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6D58742E23984AC70005C282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6D58743123984AC70005C282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6D58743323984AC70005C282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D26704F2399571200D08F77 /* SqliteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqliteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D2670522399571200D08F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D2670542399571200D08F77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D2670562399571200D08F77 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6D2670592399571200D08F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D26705B2399571300D08F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D26705E2399571300D08F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D2670602399571300D08F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D26706823995EB500D08F77 /* Contatcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contatcs.swift; sourceTree = "<group>"; };
+		6D26706A2399668400D08F77 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		6D26706D239970B400D08F77 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D58741F23984AC40005C282 /* Frameworks */ = {
+		6D26704C2399571200D08F77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +43,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D58741923984AC40005C282 = {
+		6D2670462399571200D08F77 = {
 			isa = PBXGroup;
 			children = (
-				6D58742423984AC50005C282 /* SQLiteApp */,
-				6D58742323984AC50005C282 /* Products */,
+				6D26706C23996BAF00D08F77 /* Controllers */,
+				6D26706723995E9500D08F77 /* Model */,
+				6D2670512399571200D08F77 /* SqliteApp */,
+				6D2670502399571200D08F77 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6D58742323984AC50005C282 /* Products */ = {
+		6D2670502399571200D08F77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D58742223984AC50005C282 /* SQLiteApp.app */,
+				6D26704F2399571200D08F77 /* SqliteApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6D58742423984AC50005C282 /* SQLiteApp */ = {
+		6D2670512399571200D08F77 /* SqliteApp */ = {
 			isa = PBXGroup;
 			children = (
-				6D58742523984AC50005C282 /* AppDelegate.swift */,
-				6D58742723984AC50005C282 /* SceneDelegate.swift */,
-				6D58742923984AC50005C282 /* ViewController.swift */,
-				6D58742B23984AC50005C282 /* Main.storyboard */,
-				6D58742E23984AC70005C282 /* Assets.xcassets */,
-				6D58743023984AC70005C282 /* LaunchScreen.storyboard */,
-				6D58743323984AC70005C282 /* Info.plist */,
+				6D26706A2399668400D08F77 /* Database.swift */,
+				6D26706823995EB500D08F77 /* Contatcs.swift */,
+				6D2670522399571200D08F77 /* AppDelegate.swift */,
+				6D2670542399571200D08F77 /* SceneDelegate.swift */,
+				6D2670562399571200D08F77 /* MainViewController.swift */,
+				6D26706D239970B400D08F77 /* AddContactViewController.swift */,
+				6D2670582399571200D08F77 /* Main.storyboard */,
+				6D26705B2399571300D08F77 /* Assets.xcassets */,
+				6D26705D2399571300D08F77 /* LaunchScreen.storyboard */,
+				6D2670602399571300D08F77 /* Info.plist */,
 			);
-			path = SQLiteApp;
+			path = SqliteApp;
+			sourceTree = "<group>";
+		};
+		6D26706723995E9500D08F77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D26706C23996BAF00D08F77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6D58742123984AC40005C282 /* SQLiteApp */ = {
+		6D26704E2399571200D08F77 /* SqliteApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D58743623984AC70005C282 /* Build configuration list for PBXNativeTarget "SQLiteApp" */;
+			buildConfigurationList = 6D2670632399571300D08F77 /* Build configuration list for PBXNativeTarget "SqliteApp" */;
 			buildPhases = (
-				6D58741E23984AC40005C282 /* Sources */,
-				6D58741F23984AC40005C282 /* Frameworks */,
-				6D58742023984AC40005C282 /* Resources */,
+				6D26704B2399571200D08F77 /* Sources */,
+				6D26704C2399571200D08F77 /* Frameworks */,
+				6D26704D2399571200D08F77 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SQLiteApp;
-			productName = SQLiteApp;
-			productReference = 6D58742223984AC50005C282 /* SQLiteApp.app */;
+			name = SqliteApp;
+			productName = SqliteApp;
+			productReference = 6D26704F2399571200D08F77 /* SqliteApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6D58741A23984AC40005C282 /* Project object */ = {
+		6D2670472399571200D08F77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Brahmastra;
 				TargetAttributes = {
-					6D58742123984AC40005C282 = {
+					6D26704E2399571200D08F77 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = 6D58741D23984AC40005C282 /* Build configuration list for PBXProject "SQLiteApp" */;
+			buildConfigurationList = 6D26704A2399571200D08F77 /* Build configuration list for PBXProject "SqliteApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +135,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 6D58741923984AC40005C282;
-			productRefGroup = 6D58742323984AC50005C282 /* Products */;
+			mainGroup = 6D2670462399571200D08F77;
+			productRefGroup = 6D2670502399571200D08F77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D58742123984AC40005C282 /* SQLiteApp */,
+				6D26704E2399571200D08F77 /* SqliteApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6D58742023984AC40005C282 /* Resources */ = {
+		6D26704D2399571200D08F77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D58743223984AC70005C282 /* LaunchScreen.storyboard in Resources */,
-				6D58742F23984AC70005C282 /* Assets.xcassets in Resources */,
-				6D58742D23984AC50005C282 /* Main.storyboard in Resources */,
+				6D26705F2399571300D08F77 /* LaunchScreen.storyboard in Resources */,
+				6D26705C2399571300D08F77 /* Assets.xcassets in Resources */,
+				6D26705A2399571200D08F77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6D58741E23984AC40005C282 /* Sources */ = {
+		6D26704B2399571200D08F77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D58742A23984AC50005C282 /* ViewController.swift in Sources */,
-				6D58742623984AC50005C282 /* AppDelegate.swift in Sources */,
-				6D58742823984AC50005C282 /* SceneDelegate.swift in Sources */,
+				6D26706923995EB500D08F77 /* Contatcs.swift in Sources */,
+				6D2670572399571200D08F77 /* MainViewController.swift in Sources */,
+				6D2670532399571200D08F77 /* AppDelegate.swift in Sources */,
+				6D26706E239970B400D08F77 /* AddContactViewController.swift in Sources */,
+				6D26706B2399668400D08F77 /* Database.swift in Sources */,
+				6D2670552399571200D08F77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6D58742B23984AC50005C282 /* Main.storyboard */ = {
+		6D2670582399571200D08F77 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6D58742C23984AC50005C282 /* Base */,
+				6D2670592399571200D08F77 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6D58743023984AC70005C282 /* LaunchScreen.storyboard */ = {
+		6D26705D2399571300D08F77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6D58743123984AC70005C282 /* Base */,
+				6D26705E2399571300D08F77 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +194,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6D58743423984AC70005C282 /* Debug */ = {
+		6D2670612399571300D08F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +254,7 @@
 			};
 			name = Debug;
 		};
-		6D58743523984AC70005C282 /* Release */ = {
+		6D2670622399571300D08F77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,34 +308,34 @@
 			};
 			name = Release;
 		};
-		6D58743723984AC70005C282 /* Debug */ = {
+		6D2670642399571300D08F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SQLiteApp/Info.plist;
+				INFOPLIST_FILE = SqliteApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DefineLab.SQLiteApp;
+				PRODUCT_BUNDLE_IDENTIFIER = DefineLab.SqliteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6D58743823984AC70005C282 /* Release */ = {
+		6D2670652399571300D08F77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SQLiteApp/Info.plist;
+				INFOPLIST_FILE = SqliteApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DefineLab.SQLiteApp;
+				PRODUCT_BUNDLE_IDENTIFIER = DefineLab.SqliteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6D58741D23984AC40005C282 /* Build configuration list for PBXProject "SQLiteApp" */ = {
+		6D26704A2399571200D08F77 /* Build configuration list for PBXProject "SqliteApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6D58743423984AC70005C282 /* Debug */,
-				6D58743523984AC70005C282 /* Release */,
+				6D2670612399571300D08F77 /* Debug */,
+				6D2670622399571300D08F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D58743623984AC70005C282 /* Build configuration list for PBXNativeTarget "SQLiteApp" */ = {
+		6D2670632399571300D08F77 /* Build configuration list for PBXNativeTarget "SqliteApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6D58743723984AC70005C282 /* Debug */,
-				6D58743823984AC70005C282 /* Release */,
+				6D2670642399571300D08F77 /* Debug */,
+				6D2670652399571300D08F77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6D58741A23984AC40005C282 /* Project object */;
+	rootObject = 6D2670472399571200D08F77 /* Project object */;
 }
