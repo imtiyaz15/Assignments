@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "966F1424-A879-4E3F-8B4A-EDF2686475BF"
+   uuid = "B3D79D95-0F68-4647-A261-1ADD0EEA4FC4"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B7A00EE9-2784-4B7A-952D-F6C077DE05A5"
+            uuid = "49C0018E-8D25-4357-8152-86D88F5050C1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SqliteApp/MainViewController.swift"
+            filePath = "SwiftExample/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "deleteRecord(id:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "856B46E6-AF2D-49D7-86F5-3A04057F238B"
+            uuid = "046396F9-36BA-4540-A2A5-C1839A89A9FF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SqliteApp/MainViewController.swift"
+            filePath = "SwiftExample/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "readValues()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4F5CE80F-4FB6-45EE-A595-FE5D24F9B777"
+            uuid = "75E1370B-D30D-4EC5-B3B6-5B5807FFFA37"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SqliteApp/MainViewController.swift"
+            filePath = "SwiftExample/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "buttonSave(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
