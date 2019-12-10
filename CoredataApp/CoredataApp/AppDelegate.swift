@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        print("Document Diretory(file location of databse copy link to see data whether it is saved or not ): ", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ??  "Data base Directory not found" )
         // Override point for customization after application launch.
         return true
     }

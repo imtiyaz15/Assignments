@@ -51,11 +51,10 @@ class ViewController: UIViewController {
                 return
         }
         
-        // 1
+
         let managedContext =
             appDelegate.persistentContainer.viewContext
         
-        // 2
         let entity =
             NSEntityDescription.entity(forEntityName: "Person",
                                        in: managedContext)!
@@ -63,10 +62,10 @@ class ViewController: UIViewController {
         let person = NSManagedObject(entity: entity,
                                      insertInto: managedContext)
         
-        // 3
+
         person.setValue(name, forKeyPath: "name")
         
-        // 4
+
         do {
             try managedContext.save()
             people.append(person)
@@ -79,7 +78,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        title = "The List"
         listTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        //1
+    
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return
@@ -87,12 +86,11 @@ class ViewController: UIViewController {
         
         let managedContext =
             appDelegate.persistentContainer.viewContext
-        
-        //2
+     
         let fetchRequest =
             NSFetchRequest<NSManagedObject>(entityName: "Person")
         
-        //3
+    
         do {
             people = try managedContext.fetch(fetchRequest)
         } catch let error as NSError {
