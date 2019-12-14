@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k4y-cV-7di">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,56 +11,86 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5N6-aD-Xcx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Browser_Using_WebView" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PQM-E5-0XW">
+                <viewController id="k4y-cV-7di" customClass="ViewController" customModule="Browser_Using_WebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="41y-rB-PRk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="K5D-A3-EjR">
-                                <rect key="frame" x="0.0" y="30" width="375" height="56"/>
-                                <color key="backgroundColor" red="0.90980392160000001" green="0.42040012560000001" blue="0.29239764159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <searchBar alpha="0.80000000000000004" contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-yd-ui5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="k4y-cV-7di" id="vfo-B1-zcS"/>
+                                </connections>
                             </searchBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="per-EI-tvy">
-                                <rect key="frame" x="0.0" y="594" width="375" height="44"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-aw-YdG">
+                                <rect key="frame" x="0.0" y="76" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntd-iC-w0S">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="&lt;" id="bka-RC-eOj"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="F2X-zV-iWL"/>
-                                    <barButtonItem systemItem="refresh" id="fui-3v-mIa"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pF2-nZ-SvE"/>
-                                    <barButtonItem title="&gt;" id="u0z-1e-VPY"/>
+                                    <barButtonItem title="&lt;" id="FdI-vh-1Tn">
+                                        <connections>
+                                            <action selector="backButton:" destination="k4y-cV-7di" id="a7N-pB-gNy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KuT-xb-bpr"/>
+                                    <barButtonItem systemItem="refresh" id="ynj-Ye-pHC">
+                                        <connections>
+                                            <action selector="refreshButton:" destination="k4y-cV-7di" id="Jdk-4y-A45"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4dq-p9-MGS"/>
+                                    <barButtonItem title="&gt;" id="phk-yj-qt8">
+                                        <connections>
+                                            <action selector="forwardButton:" destination="k4y-cV-7di" id="jsg-GI-5dS"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OG2-Yd-usR">
-                                <rect key="frame" x="0.0" y="86" width="375" height="518"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.97305089239999998" green="0.93259970020000005" blue="0.66047532269999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="7WD-Gd-RAG" firstAttribute="bottom" secondItem="per-EI-tvy" secondAttribute="bottom" constant="29" id="1UI-b9-BA9"/>
-                            <constraint firstItem="per-EI-tvy" firstAttribute="leading" secondItem="K5D-A3-EjR" secondAttribute="leading" id="4yl-g8-f1C"/>
-                            <constraint firstItem="OG2-Yd-usR" firstAttribute="top" secondItem="K5D-A3-EjR" secondAttribute="bottom" id="8xV-me-FoC"/>
-                            <constraint firstItem="7WD-Gd-RAG" firstAttribute="bottom" secondItem="OG2-Yd-usR" secondAttribute="bottom" constant="63" id="LIA-c7-eTz"/>
-                            <constraint firstItem="per-EI-tvy" firstAttribute="leading" secondItem="PQM-E5-0XW" secondAttribute="leading" id="V9e-dS-m59"/>
-                            <constraint firstItem="per-EI-tvy" firstAttribute="trailing" secondItem="K5D-A3-EjR" secondAttribute="trailing" id="X3S-3p-1Bd"/>
-                            <constraint firstItem="OG2-Yd-usR" firstAttribute="leading" secondItem="per-EI-tvy" secondAttribute="leading" id="XkO-oI-Deb"/>
-                            <constraint firstItem="K5D-A3-EjR" firstAttribute="top" secondItem="7WD-Gd-RAG" secondAttribute="top" constant="10" id="dfp-7Y-fRb"/>
-                            <constraint firstItem="OG2-Yd-usR" firstAttribute="trailing" secondItem="per-EI-tvy" secondAttribute="trailing" id="nol-Bd-MRV"/>
-                            <constraint firstAttribute="trailing" secondItem="per-EI-tvy" secondAttribute="trailing" id="saw-RH-lzi"/>
+                            <constraint firstItem="ntd-iC-w0S" firstAttribute="trailing" secondItem="bdd-Cw-RYz" secondAttribute="trailing" id="4q8-zV-QH7"/>
+                            <constraint firstItem="bdd-Cw-RYz" firstAttribute="trailing" secondItem="AYH-aw-YdG" secondAttribute="trailing" id="DZQ-DA-jOX"/>
+                            <constraint firstItem="AYH-aw-YdG" firstAttribute="leading" secondItem="bdd-Cw-RYz" secondAttribute="leading" id="GnS-Kf-zNs"/>
+                            <constraint firstItem="ntd-iC-w0S" firstAttribute="leading" secondItem="bdd-Cw-RYz" secondAttribute="leading" id="Sew-aI-FdQ"/>
+                            <constraint firstItem="m2u-yd-ui5" firstAttribute="top" secondItem="bdd-Cw-RYz" secondAttribute="top" id="cFq-sx-thj"/>
+                            <constraint firstItem="m2u-yd-ui5" firstAttribute="trailing" secondItem="bdd-Cw-RYz" secondAttribute="trailing" id="gSP-zP-bgt"/>
+                            <constraint firstItem="m2u-yd-ui5" firstAttribute="leading" secondItem="bdd-Cw-RYz" secondAttribute="leading" id="ld0-v1-vEM"/>
+                            <constraint firstItem="ntd-iC-w0S" firstAttribute="top" secondItem="AYH-aw-YdG" secondAttribute="bottom" id="ovP-sh-XPq"/>
+                            <constraint firstItem="AYH-aw-YdG" firstAttribute="top" secondItem="m2u-yd-ui5" secondAttribute="bottom" id="qn0-Gn-Lch"/>
+                            <constraint firstItem="ntd-iC-w0S" firstAttribute="bottom" secondItem="bdd-Cw-RYz" secondAttribute="bottom" id="yNp-Ox-RCu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7WD-Gd-RAG"/>
+                        <viewLayoutGuide key="safeArea" id="bdd-Cw-RYz"/>
                     </view>
                     <connections>
-                        <outlet property="browserView" destination="OG2-Yd-usR" id="G3e-UH-WNO"/>
-                        <outlet property="searchBrowser" destination="K5D-A3-EjR" id="jai-wE-dDX"/>
+                        <outlet property="back" destination="FdI-vh-1Tn" id="nNe-uJ-ost"/>
+                        <outlet property="browserView" destination="AYH-aw-YdG" id="3ua-i3-Vw8"/>
+                        <outlet property="forward" destination="phk-yj-qt8" id="dzF-3q-i5D"/>
+                        <outlet property="searchDisplayController" destination="K9F-vI-OKT" id="Nct-5H-R0q"/>
+                        <outlet property="searchWeb" destination="m2u-yd-ui5" id="Zwj-Hc-FSX"/>
+                        <outlet property="toolsBar" destination="ntd-iC-w0S" id="WQc-zi-hEA"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDk-JP-c61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="K9F-vI-OKT">
+                    <connections>
+                        <outlet property="delegate" destination="k4y-cV-7di" id="eIH-Ws-rKp"/>
+                        <outlet property="searchContentsController" destination="k4y-cV-7di" id="BZs-75-vPP"/>
+                        <outlet property="searchResultsDataSource" destination="k4y-cV-7di" id="TXg-6W-xXx"/>
+                        <outlet property="searchResultsDelegate" destination="k4y-cV-7di" id="ZGl-yn-vhB"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="64.799999999999997" y="82.3088455772114"/>
+            <point key="canvasLocation" x="498" y="-1280"/>
         </scene>
     </scenes>
 </document>
