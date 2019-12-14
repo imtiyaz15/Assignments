@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJN-Tc-wLF">
+                                <rect key="frame" x="0.0" y="133" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="otk-NV-GyM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MZD-ht-oyl"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vk-FN-Cf0">
+                                <rect key="frame" x="1" y="250" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SELECT DATE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17P-f1-sMK">
+                                <rect key="frame" x="1" y="279" width="320" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Lable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-h0-Nyy">
+                                <rect key="frame" x="0.0" y="30" width="320" height="57.5"/>
+                                <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Ddy-SN-5AV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2666666667" green="0.50196078430000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.98431372549999996" green="0.29803921570000003" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5vk-FN-Cf0" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="0UO-C8-i1G"/>
+                            <constraint firstItem="17P-f1-sMK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="6UI-U5-Ps4"/>
+                            <constraint firstItem="17P-f1-sMK" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="75Z-Z3-oWo"/>
+                            <constraint firstItem="17P-f1-sMK" firstAttribute="top" secondItem="5vk-FN-Cf0" secondAttribute="bottom" constant="8" symbolic="YES" id="BMH-LO-Bbt"/>
+                            <constraint firstItem="17P-f1-sMK" firstAttribute="centerX" secondItem="5vk-FN-Cf0" secondAttribute="centerX" id="MCf-Kw-UTi"/>
+                            <constraint firstItem="5vk-FN-Cf0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="250" id="ZgO-iQ-ava"/>
+                            <constraint firstItem="Pj0-h0-Nyy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gEm-jr-Suz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pj0-h0-Nyy" secondAttribute="trailing" id="ir6-34-T6i"/>
+                            <constraint firstItem="Pj0-h0-Nyy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uX1-jB-F7q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="colorLabel" destination="Pj0-h0-Nyy" id="TSn-do-gHk"/>
+                        <outlet property="date_Label" destination="5vk-FN-Cf0" id="fGr-1M-0eU"/>
+                        <outlet property="daysPicker" destination="pJN-Tc-wLF" id="7WJ-9K-7bE"/>
+                        <outlet property="txtDate" destination="17P-f1-sMK" id="EWe-K6-vIz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
