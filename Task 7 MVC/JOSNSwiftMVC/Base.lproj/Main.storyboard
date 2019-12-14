@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X4x-29-tSN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gHB-Pe-dw0">
+            <objects>
+                <viewController id="X4x-29-tSN" customClass="JSONViewController" customModule="JOSNSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Js4-Pi-6QK"/>
+                        <viewControllerLayoutGuide type="bottom" id="WUU-vj-xYl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JPK-nO-iIX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7s-DG-eZf">
+                                <rect key="frame" x="16" y="95" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.67509581190000001" green="0.92420563359999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M6-8m-Opz" customClass="ANCustomView" customModule="JOSNSwiftDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="194" width="343" height="301"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxF-cQ-GX0">
+                                        <rect key="frame" x="52" y="44" width="239" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr9-rS-uOU">
+                                        <rect key="frame" x="52" y="198" width="239" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <color key="highlightedColor" red="0.90980392160000001" green="0.71492039659999995" blue="0.33761712179999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.67509581190000001" green="0.92420563359999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nxF-cQ-GX0" secondAttribute="trailing" constant="52" id="WTG-lR-173"/>
+                                    <constraint firstAttribute="bottom" secondItem="sr9-rS-uOU" secondAttribute="bottom" constant="66" id="Wkx-XP-rkj"/>
+                                    <constraint firstAttribute="trailing" secondItem="sr9-rS-uOU" secondAttribute="trailing" constant="52" id="bHy-bd-RKW"/>
+                                    <constraint firstItem="sr9-rS-uOU" firstAttribute="leading" secondItem="5M6-8m-Opz" secondAttribute="leading" constant="52" id="fFF-cV-VHn"/>
+                                    <constraint firstItem="nxF-cQ-GX0" firstAttribute="top" secondItem="5M6-8m-Opz" secondAttribute="top" constant="44" id="h5N-ro-27a"/>
+                                    <constraint firstItem="nxF-cQ-GX0" firstAttribute="leading" secondItem="5M6-8m-Opz" secondAttribute="leading" constant="52" id="hLi-bb-lnb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="10" height="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.90980392160000001" green="0.57059485300000001" blue="0.4457778007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5M6-8m-Opz" firstAttribute="trailing" secondItem="JPK-nO-iIX" secondAttribute="trailingMargin" id="A0E-Ol-qXl"/>
+                            <constraint firstItem="WUU-vj-xYl" firstAttribute="top" secondItem="5M6-8m-Opz" secondAttribute="bottom" constant="172" id="WEK-74-aCr"/>
+                            <constraint firstItem="5M6-8m-Opz" firstAttribute="leading" secondItem="JPK-nO-iIX" secondAttribute="leadingMargin" id="aCs-tB-HGL"/>
+                            <constraint firstItem="5M6-8m-Opz" firstAttribute="top" secondItem="L7s-DG-eZf" secondAttribute="bottom" constant="65" id="jpm-ma-hBh"/>
+                            <constraint firstItem="L7s-DG-eZf" firstAttribute="trailing" secondItem="JPK-nO-iIX" secondAttribute="trailingMargin" id="nk1-av-IhY"/>
+                            <constraint firstItem="L7s-DG-eZf" firstAttribute="leading" secondItem="JPK-nO-iIX" secondAttribute="leadingMargin" id="q6E-mU-uvk"/>
+                            <constraint firstItem="L7s-DG-eZf" firstAttribute="top" secondItem="Js4-Pi-6QK" secondAttribute="bottom" constant="75" id="xo5-5I-tBh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="t1" destination="nxF-cQ-GX0" id="WBd-N6-aJ8"/>
+                        <outlet property="t2" destination="sr9-rS-uOU" id="ru9-QW-QCf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ku3-T4-ADH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253.59999999999999" y="-179.46026986506749"/>
+        </scene>
+    </scenes>
+</document>
