@@ -43,9 +43,10 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-KD-Kl8">
-                                <rect key="frame" x="141" y="154" width="146" height="30"/>
+                                <rect key="frame" x="68" y="161" width="303" height="30"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.33507597140000001" blue="0.2831397309" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="titleShadowOffset" width="-2" height="0.0"/>
-                                <state key="normal" title="Add text to Realm DB">
+                                <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -57,11 +58,12 @@
                         <constraints>
                             <constraint firstItem="M0c-Wm-AzH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AxI-TT-SeM"/>
                             <constraint firstItem="532-Q1-2q5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="GXW-hK-Lt8"/>
-                            <constraint firstItem="M0c-Wm-AzH" firstAttribute="top" secondItem="mp7-KD-Kl8" secondAttribute="bottom" constant="15" id="KWv-oH-ob6"/>
+                            <constraint firstItem="M0c-Wm-AzH" firstAttribute="top" secondItem="mp7-KD-Kl8" secondAttribute="bottom" constant="8" id="KWv-oH-ob6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M0c-Wm-AzH" secondAttribute="trailing" id="LjD-E2-yDL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M0c-Wm-AzH" secondAttribute="bottom" id="P8N-gc-3Y5"/>
-                            <constraint firstItem="mp7-KD-Kl8" firstAttribute="top" secondItem="532-Q1-2q5" secondAttribute="bottom" constant="20" id="Yab-Wu-Jvj"/>
-                            <constraint firstItem="mp7-KD-Kl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="yC7-oG-CFT"/>
+                            <constraint firstItem="mp7-KD-Kl8" firstAttribute="top" secondItem="532-Q1-2q5" secondAttribute="bottom" constant="27" id="Yab-Wu-Jvj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mp7-KD-Kl8" secondAttribute="trailing" constant="43" id="q7Y-O6-JND"/>
+                            <constraint firstItem="mp7-KD-Kl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="yC7-oG-CFT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="532-Q1-2q5" secondAttribute="trailing" constant="43" id="ykF-7E-x5Q"/>
                             <constraint firstItem="532-Q1-2q5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="zWG-cU-SpS"/>
                         </constraints>
@@ -74,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="40"/>
+            <point key="canvasLocation" x="115.94202898550725" y="39.508928571428569"/>
         </scene>
     </scenes>
 </document>
